@@ -1,0 +1,39 @@
+steps to use armitage tools
+1. **Installation**:
+   - Download the appropriate package from the official website or use a package manager.
+   - Launch the application after installation.
+
+2. **Connecting to the Metasploit Framework**:
+   - Navigate to the “Hosts” tab and click “Connect”.
+   - Start the Metasploit RPC server when prompted.
+
+3. **Adding a Target**:
+   - In the “Hosts” tab, click “Add Host”.
+   - Specify the target's IP address, hostname, or domain name.
+
+4. **Scanning for Vulnerabilities**:
+   - Go to the “Attacks” tab and select “Find Attacks”.
+   - Choose the type of scan (e.g., port scan, service scan) and start the scan.
+
+5. **Exploiting Vulnerabilities**:
+   - In the “Attacks” tab, select “Exploit”.
+   - Choose the exploit to use (e.g., buffer overflow, SQL injection) and launch it.
+
+6. **Generating Reports**:
+   - Navigate to the “Reports” tab and select “Generate Report”.
+   - Specify the type of report (e.g., summary, detailed) and any additional parameters.
+
+**Example Usage**:
+-Launch Armitage and connect to the Metasploit Framework.
+armitage
+-Add the target to the workspace by specifying its IP address.
+Hosts > Add Host > IP Address > 192.168.1.100
+-Scan the target for vulnerabilities by selecting “Find Attacks” from the “Attacks” tab.
+Attacks > Find Attacks > Service Scan
+-Identify the “EternalBlue” vulnerability as a potential exploit by reviewing the scan results.
+Attacks > Search > Enter "EternalBlue"
+-Launch the exploit and gain access to the target.
+Attacks > Exploit > EternalBlue
+-Generate a report of the penetration testing results.
+Reports
+   
