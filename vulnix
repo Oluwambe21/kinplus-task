@@ -1,0 +1,30 @@
+steps to use vulnix 
+1. **Initial Enumeration**:
+   - Conduct a port scan using `unicornscan`.
+   - Discover open ports: SSH (22), SMTP (25), POP3 (110), NFS (2049), and others.
+   - Attempt UDP port scan as well.
+
+2. **NFS Enumeration**:
+   - Identify NFS shares.
+   - Attempt to mount the NFS share, facing issues with port configurations.
+
+3. **SMTP Enumeration**:
+   - Use Nmap to enumerate SMTP service.
+   - Discover VRFY command available, indicating user enumeration.
+
+4. **User Enumeration**:
+   - Utilize `smtp-user-enum` tool to enumerate users.
+   - Use finger service to further enumerate users.
+   - Create a Bash script for automating user enumeration.
+
+5. **Exploitation**:
+   - Recognize the unique user "user" as a potential target.
+   - Attempt SSH brute force using the rockyou.txt wordlist.
+   - Successfully brute force the SSH login for user "user".
+
+6. **Post-Exploitation**:
+   - Conduct LinEnum for post-exploitation enumeration.
+   - Discover NFS configuration with root squash.
+   - Attempt to create a user with the same UID as the NFS share, but encounter issues due to disk space constraints.
+   - Generate SSH keys for user "vulnix" but face issues due to disk space limitations.
+
