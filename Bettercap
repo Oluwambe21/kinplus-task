@@ -1,0 +1,46 @@
+STEPS TO USE BETTERCAP 
+1. **Installation:**
+   - For Kali Linux users:
+     - Run `apt-get update`.
+     - Run `apt-get install bettercap`.
+   - For other Linux flavors and Mac OS X:
+     - Run `sudo apt-get install build-essential ruby-dev libpcap-dev`.
+     - Run `gem install bettercap`.
+     - Run `gem update bettercap`.
+
+2. **Getting Started:**
+   - Check available modules/commands: `bettercap --help`.
+   - Start an interactive session: `sudo bettercap`.
+
+3. **Monitoring Local Network:**
+   - View connected devices: `net.show`.
+   - Actively search for devices: `net.probe on`.
+
+4. **Constant Monitoring:**
+   - Set ticker for auto-update: 
+     - Run `set ticker.commands 'net.show'`.
+     - Run `ticker on`.
+
+5. **Spoofing and Sniffing:**
+   - Spoof a device: 
+     - Run `set arp.spoof.targets <device_ip_address>`.
+     - Run `arp.spoof on`.
+   - Sniff device activities: 
+     - Run `set net.sniff.verbose true`.
+     - Run `net.sniff on`.
+
+6. **Analyzing Activities:**
+   - Monitor activities with the sniffer: `bettercap sniff on`.
+
+7. **Additional Functionalities:**
+   - Explore other functionalities:
+     - Password sniffer
+     - Fake access point creation
+     - Handshake capture
+     - Wi-Fi networks monitoring
+     - Bettercap webserver
+     - DNS spoofer
+     - Transparent HTTP proxy
+     - TCP proxy
+     - Logging
+
