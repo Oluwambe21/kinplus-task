@@ -1,0 +1,27 @@
+Hack from the Windows 7 CD:
+
+Boot from Windows 7 CD:
+
+Boot the system using the Windows 7 CD.
+Access Repair Options:
+
+Click on "Next" and choose "Repair your computer".
+Choose Command Prompt:
+
+Click "Next" in the System Recovery window and select the "Command Prompt" option.
+Copy Seth File to C Drive:
+
+In the command prompt, copy the Seth file to the C drive using the command: "C:\windows\system32\Seth.exe c:"
+Replace Seth.exe with cmd.exe:
+
+Replace the Seth.exe file with cmd.exe using the command: "c:\windows\system32\cmd.exe c:\windows\system32\Seth.exe".
+Restart Windows Setup:
+
+Type "exit" to restart the Windows setup.
+Trigger Sticky Keys:
+
+Press the shift key 5 times rapidly when prompted for the username.
+Click Yes in the Sticky Keys window.
+Change User Password:
+
+In the command prompt, type the command "net user" followed by the username and new password.
