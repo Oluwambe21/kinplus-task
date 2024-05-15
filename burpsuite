@@ -1,3 +1,4 @@
+STEPS to use burp suite
 1. **Update Burp Suite:**
    - Open terminal and update Kali Linux: `sudo apt update -y`
    - Check for Burp Suite update: `sudo apt upgrade burpsuite`
